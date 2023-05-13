@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/instruction_txtv"
+                android:layout_gravity="center"
+                android:text="@string/payment_instruction1"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/merchant_name"
+                android:text="here"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/imageView"
+                android:src="@mipmap/ic_qrcode"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_number"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"/>
+
+            <Button
+                android:id="@+id/verify_btn"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/main_btn"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+
+
+</LinearLayout>

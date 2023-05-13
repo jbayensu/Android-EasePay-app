@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.droid.omega.easepay.EmailPinVerificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/wallet"
+                android:layout_marginTop="100dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_account_balance_wallet_black_48dp"
+                />
+            <TextView
+                android:id="@+id/wallet_txt"
+                android:layout_below="@+id/wallet"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Wallet"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/merchant"
+                android:layout_toRightOf="@+id/wallet"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_add_shopping_cart_black_48dp"
+                />
+            <TextView
+                android:id="@+id/merchant_txt"
+                android:layout_below="@id/merchant"
+                android:layout_toRightOf="@+id/wallet"
+                android:layout_marginLeft="65dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merchants"
+
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/history"
+                android:layout_below="@id/wallet_txt"
+                android:layout_marginTop="40dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_history_black_48dp"
+                />
+            <TextView
+                android:id="@+id/history_txt"
+                android:layout_below="@+id/history"
+                android:layout_marginLeft="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:textSize="16sp"/>
+
+
+            <ImageView
+                android:id="@+id/contact"
+                android:layout_below="@id/merchant_txt"
+                android:layout_toRightOf="@+id/history"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_contact_phone_black_48dp"
+                />
+            <TextView
+                android:id="@+id/contact_txt"
+                android:layout_below="@id/contact"
+                android:layout_toRightOf="@+id/history"
+                android:layout_marginLeft="65dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

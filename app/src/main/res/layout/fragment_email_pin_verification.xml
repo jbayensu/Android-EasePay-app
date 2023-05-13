@@ -1,0 +1,68 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.droid.omega.easepay.EmailPinVerificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Please Enter your Email and Pin code"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            style="@style/Divider"
+            />
+
+        <EditText
+            android:id="@+id/email_verification"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="xxxxx@xxxx.xxxx"
+            android:typeface="monospace"
+            android:textAlignment="center"
+            android:background="@drawable/edittext_border"
+            android:singleLine="true"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/pin_verification"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="xxxxxx"
+            android:textAlignment="center"
+            android:typeface="monospace"
+            android:background="@drawable/edittext_border"
+            android:inputType="numberPassword"
+            android:singleLine="true"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/submit_verification"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/main_btn"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/windowBackground"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.droid.omega.easepay.AboutFragment"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="297dp"
+        android:layout_height="match_parent"
+        android:text="About Ease Pay"
+        android:textColor="@color/windowBackground"
+        android:background="@color/main_btn"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.22"
+        android:textAlignment="center"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/epay_logo_ms_a"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="version: 1.0"
+        />
+    <View
+        android:layout_width="150dp"
+        style="@style/Divider"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Developer:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="John Bob Ayensu"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="150dp"
+        style="@style/Divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="copyright &#169; 2016"
+        android:layout_marginBottom="20dp"/>
+
+
+
+</LinearLayout>

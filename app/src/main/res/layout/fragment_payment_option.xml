@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.droid.omega.easepay.PaymentOptionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Cardholder Name"/>
+
+        <View
+            style="@style/Divider"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/card_f_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/card_L_name"
+                android:layout_toRightOf="@+id/card_f_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Card Number"/>
+
+        <View
+            style="@style/Divider"
+            />
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Card Number here"
+            android:typeface="monospace"
+            android:background="@drawable/edittext_border"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Expiry Date"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            style="@style/Divider"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/card_exp_month"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="MM"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/card_exp_year"
+                android:layout_toRightOf="@+id/card_exp_month"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="YY"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:singleLine="true"
+                android:inputType="number"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Pin / Security Code"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            style="@style/Divider"
+            />
+        <EditText
+            android:id="@+id/card_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Pin Number here"
+            android:typeface="monospace"
+            android:background="@drawable/edittext_border"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/main_btn"
+            android:textColor="@color/windowBackground"/>
+
+    </LinearLayout>
+</ScrollView>

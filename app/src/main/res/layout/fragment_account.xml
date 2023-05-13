@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windowBackground"
+    android:padding="20dp"
+    tools:context="com.droid.omega.easepay.AccountFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:nestedScrollingEnabled="false">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Upload a picture"/>
+
+        <View
+            style="@style/Divider"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_account_circle_black_48dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="60dp"
+                />
+
+            <Button
+                android:id="@+id/upload_img_btn"
+                android:layout_toRightOf="@+id/profile_img"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="upload image"
+                android:layout_alignBottom="@+id/profile_img"
+                android:background="@color/main_btn"
+                android:textColor="@color/windowBackground"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Edit Profile"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+        <View
+            style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/profile_fname"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:singleLine="true"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/profile_mname"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="Middle Name"
+                android:singleLine="true"
+                android:layout_below="@+id/profile_fname"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/profile_lname"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:singleLine="true"
+                android:layout_below="@+id/profile_mname"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/submit_profile_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_submit"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/profile_lname"
+                android:background="@color/main_btn"
+                android:layout_marginLeft="160dp"
+                android:textColor="@color/windowBackground"/>
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Edit password"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+        <View
+            style="@style/Divider"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/old_password"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="Enter Old password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/new_password"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="Enter New password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_below="@+id/old_password"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/new_password2"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="Re-enter New password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_below="@+id/new_password"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:layout_marginBottom="5dp"/>
+            <Button
+                android:id="@+id/submit_password_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_submit"
+                android:layout_marginLeft="160dp"
+                android:background="@color/main_btn"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/new_password2"
+                android:textColor="@color/windowBackground"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+

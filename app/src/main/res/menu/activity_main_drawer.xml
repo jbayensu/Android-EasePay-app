@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:icon="@drawable/ic_home_white_48dp"
+            android:title="Home" />
+        <item android:id="@+id/nav_wallet" android:icon="@drawable/ic_account_balance_wallet_white_48dp"
+            android:title="My Wallet" />
+        <item android:id="@+id/nav_merchants" android:icon="@drawable/ic_add_shopping_cart_white_48dp"
+            android:title="Merchants" />
+        <item android:id="@+id/nav_history" android:icon="@drawable/ic_history_white_48dp"
+            android:title="Transaction History" />
+        <item android:id="@+id/nav_logout" android:icon="@drawable/ic_exit_to_app_white_48dp"
+            android:title="Log out" />
+        <item android:id="@+id/nav_preferences" android:icon="@drawable/ic_settings_white_48dp"
+            android:title="Preferences" />
+        <item android:id="@+id/nav_contact_us" android:icon="@drawable/ic_call_white_48dp"
+            android:title="Contact Us" />
+        <item android:id="@+id/nav_about" android:icon="@android:drawable/ic_menu_info_details"
+            android:title="About" />
+    </group>
+</menu>

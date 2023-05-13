@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context="com.droid.omega.easepay.OthersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Leave us a message"/>
+
+        <View
+            style="@style/Divider"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/subject_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject:"
+                android:textSize="18sp"
+                android:layout_alignBottom="@+id/subject"
+                android:padding="5dp"/>
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/subject_title"
+                android:hint="Subject here"
+                android:typeface="monospace"
+                android:background="@drawable/edittext_border"
+                android:singleLine="true"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/message"
+            android:hint="message here"
+            android:allowUndo="true"
+            android:autoText="true"
+            android:editable="false"
+            android:gravity="top|left"
+            android:typeface="monospace"
+            android:nestedScrollingEnabled="true"
+            android:background="@drawable/edittext_border"/>
+        <Button
+            android:id="@+id/submit_email"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/main_btn"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/windowBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Let us call you"/>
+
+        <View
+            style="@style/Divider"
+            />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="phone"
+            android:hint="phone number"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_border"
+            android:typeface="monospace"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/expect_call"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Expect a Call"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/sec_btn"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/windowBackground"/>
+
+    </LinearLayout>
+</ScrollView>

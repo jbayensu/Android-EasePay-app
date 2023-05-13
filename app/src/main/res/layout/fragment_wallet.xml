@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wallet_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17-02-2016"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/wallet_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GHS 0.00"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BALANCE"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:padding="0dp"
+        android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/cash_in_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cash In"
+        android:background="@color/main_btn"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/cash_out_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cash Out"
+        android:background="@color/sec_btn"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/cash_in_btn"
+        android:layout_marginLeft="20dp"
+        />
+    </RelativeLayout>
+</LinearLayout>

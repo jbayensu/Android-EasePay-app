@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.droid.omega.easepay.TransferOutActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer to another EasePay User"
+        android:textSize="22sp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghc 0.00"
+        android:textSize="26sp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:textSize="12sp"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/amount_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount: In Ghana Cedi"
+        android:typeface="monospace"
+        android:background="@drawable/edittext_border"
+        android:singleLine="true"
+        android:layout_marginBottom="20dp"
+        android:numeric="decimal" />
+    <EditText
+        android:id="@+id/userId_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To: UserId"
+        android:typeface="monospace"
+        android:background="@drawable/edittext_border"
+        android:singleLine="true"
+        android:layout_marginBottom="20dp" />
+    <EditText
+        android:id="@+id/userPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your secret pin code"
+        android:inputType="numberPassword"
+        android:background="@drawable/edittext_border"
+        android:singleLine="true"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/transfer_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/main_btn"/>
+
+</LinearLayout>
